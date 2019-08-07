@@ -25,7 +25,7 @@ SECRET_KEY = '@#a^_@w^e9ga_747@m$%&mm(v&vo22ge6+4-4bd4bo##o98b^3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://darts-web.herokuapp.com/']
 
 
 # Application definition
