@@ -1,1 +1,1 @@
-web: gunicorn darts:index
+web: gunicorn index
