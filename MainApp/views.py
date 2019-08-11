@@ -8,5 +8,5 @@ def index(request):
     return render(request, 'MainApp/mainapp.html')
 
 
-def contact(request):
-    return render(request, 'MainApp/basic.html', {'values': ['Если остались вопросы:', '+799999999']})
+# def contact(request):
+#     return render(request, 'MainApp/basic.html', {'values': ['Если остались вопросы:', '+799999999']})
