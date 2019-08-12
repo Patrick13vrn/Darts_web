@@ -1,12 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.http import HttpResponse
-
 
 def index(request):
-    return render(request, 'MainApp/mainapp.html')
-
-
-# def contact(request):
-#     return render(request, 'MainApp/basic.html', {'values': ['Если остались вопросы:', '+799999999']})
+    player_1 = 'Алексей'
+    player_2 = 'Дмитрий'
+    return render(request, 'MainApp/wrapper.html', context={'player_1': player_1,
+                                                            'player_2': player_2})

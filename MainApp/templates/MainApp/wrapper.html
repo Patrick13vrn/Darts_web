@@ -8,15 +8,15 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-md-6"><H3 style="text-align: center">Player #1</H3></div>
-        <div class="col-md-6"><H3 style="text-align: center">Player #2</H3></div>
+    <div class="row" id="player_name">
+        <div class="col-md-6"><H3 style="text-align: center">{{ player_1 }}</H3></div>
+        <div class="col-md-6"><H3 style="text-align: center">{{ player_2 }}</H3></div>
     </div>
-    <div class="row" style="padding: 20px 0px 20px 0px">
+    <div class="row" style="padding: 20px 0px 20px 0px" id="required_score">
         <div class="col-md-6"><H1 style="text-align: center; font-weight: bold">501</H1></div>
         <div class="col-md-6"><H1 style="text-align: center; font-weight: bold">501</H1></div>
     </div>
-    <div class="row">
+    <div class="row" id="checkout">
         <div class="col-md-6">
             <H4 style="text-align: center">
                 T20+T20+Bull
@@ -24,18 +24,24 @@
         </div>
         <div class="col-md-6"><H4 style="text-align: center">D20</H4></div>
     </div>
-    <div class="row">
+    <div class="row" id="input_form">
         <div class="col-lg-6">
-            <div class="input-group input-group-lg">
-                <input type="text" class="form-control text-center" aria-label="Large"
-                       aria-describedby="inputGroup-sizing-sm">
-            </div>
+            <form>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control text-center" aria-label="Large"
+                           aria-describedby="inputGroup-sizing-sm">
+                    <button class="btn btn">Ввод</button>
+                </div>
+            </form>
         </div>
         <div class="col-md-6">
-            <div class="input-group input-group-lg">
-                <input type="text" class="form-control text-center" aria-label="Large"
-                       aria-describedby="inputGroup-sizing-sm">
-            </div>
+            <form>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control text-center" aria-label="Large"
+                           aria-describedby="inputGroup-sizing-sm">
+                    <button class="btn btn">Ввод</button>
+                </div>
+            </form>
         </div>
         <div class="col-lg-8 offset-2" style="padding-top: 50px">
             <table class="table table-bordered table-hover">
