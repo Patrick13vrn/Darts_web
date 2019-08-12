@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, 'MainApp/mainapp.html')
+    return render(request, 'MainApp/main.html')
 
 
 # def contact(request):
