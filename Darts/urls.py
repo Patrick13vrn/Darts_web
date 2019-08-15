@@ -21,6 +21,6 @@ from django.urls import include
 urlpatterns = [
     path('', include('MainApp.urls')),
     # path('', include('MainApp.darts.start')),
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
 ]
