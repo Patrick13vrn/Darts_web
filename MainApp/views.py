@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from MainApp.darts import functions, game, player, start
 
 
 def index(request):
