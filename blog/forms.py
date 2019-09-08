@@ -1,5 +1,5 @@
 from django import forms
-from .models import Tag, Post
+from .models import *
 from django.core.exceptions import ValidationError
 
 
@@ -39,3 +39,5 @@ class PostForm(forms.ModelForm):
         if new_slug == 'create':
             raise ValidationError('Slug "Create" can not be created')
         return new_slug
+
+

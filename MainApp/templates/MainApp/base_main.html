@@ -38,6 +38,17 @@
     </div>
     <div class="row" id="input_form">
         <div class="col-lg-6">
+            <form action="" class="" method="POST">
+                {% csrf_token %}
+
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control text-center" aria-label="Large"
+                           aria-describedby="inputGroup-sizing-sm">
+                    <button class="btn btn" type="submit" name="Btn-player1">Ввод</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6">
             <form>
                 <div class="input-group input-group-lg">
                     <input type="text" class="form-control text-center" aria-label="Large"
@@ -46,16 +57,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-md-6">
-            <form>
-                <div class="input-group input-group-lg">
-                    <input type="text" class="form-control text-center" aria-label="Large"
-                           aria-describedby="inputGroup-sizing-sm">
-                    <button class="btn btn">Ввод</button>
-                </div>
-            </form>
-        </div>
-        <div class="col-lg-8 offset-2" style="padding-top: 50px">
+        <div class="col-lg-6 offset-3" style="padding-top: 50px">
             <table class="table table-bordered table-hover">
                 <thead>
                 <tr style="text-align: center">
